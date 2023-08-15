@@ -1,10 +1,13 @@
 const person = {
-    name: ['Robert', 'Smith'],
-    age: 32, 
-    bio: function() {
-        console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old`);
+    name: {
+        first: 'Robert',
+        last: 'Smith',
     },
-    introduceSelf: function() {
-        console.log(`Hi! I'm ${this.name[0]}.`);
+    age: 32, 
+    bio() {
+        console.log(`${this.name.first} ${this.name.last} is ${this.age} years old`);
+    },
+    introduceSelf() {
+        console.log(`Hi! I'm ${this.name.first}.`);
     },
 };
