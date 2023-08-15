@@ -11,3 +11,7 @@ const person = {
         console.log(`Hi! I'm ${this.name.first}.`);
     },
 };
+
+const myDataName = "height";
+const myDataValue = "1.75m";
+person[myDataName] = myDataValue;
